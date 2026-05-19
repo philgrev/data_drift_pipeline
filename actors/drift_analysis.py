@@ -283,12 +283,7 @@ def run_drift_analysis(
         }
 
         # KS-based drift trigger (uses entropy + high-confidence probability)
-        trigger_out = drift_trigger(
-            df_ref=baseline_df,
-            df_new=new_df,
-            prob_col=prob_col,
-        )
-        results["drift_trigger"] = trigger_out
+        pass
 
     # Overall decision: significant if either distribution shows significant drift
     classifications = [results["probability"]["classification"]]

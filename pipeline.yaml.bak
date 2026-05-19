@@ -4,9 +4,9 @@ shim_version: "2.9.4"
 
 inputs:
   baseline:
-    type: file
+    type: artefact
   new_data:
-    type: file
+    type: artefact
   prob_col:
     type: string
     default: probability
@@ -30,8 +30,8 @@ graph:
   drift_analysis_stage:
     service:
       actor:
-        repo: /home/ubuntu/work/projects/data_drift_pipeline
-        path: actors.drift_analysis:run_drift_analysis
+        repo: https://github.com/data-rock/ml-pipelines.git@c45296f8ade6b456ef20a22a37551946abf0e52b
+        path: actors.drift-analysis/actors.drift_analysis:run_drift_analysis
     tasks:
       run_drift_analysis:
         inputs:
