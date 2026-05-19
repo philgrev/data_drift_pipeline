@@ -1,0 +1,9 @@
+inputs:
+  baseline:
+    _type: artefact
+    url: s3://datarock-pipeline-test-artefact-store/pipeline_invocations/250731-250731_2_300_Doris_2024-0851-bd8fe83/batch_download_csvs
+    column: combined_csv
+  new_data:
+    _type: artefact
+    url: s3://datarock-pipeline-test-artefact-store/pipeline_invocations/260126-260126_2_301_Madrid_final-0750-937509c/batch_download_csvs
+    column: combined_csv
