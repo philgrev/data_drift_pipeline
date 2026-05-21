@@ -1,7 +1,7 @@
 inputs:
   baseline:
     _type: local_path
-    path: /home/ubuntu/work/projects/data/madrid_merge_2024.csv
+    path: /home/ubuntu/work/projects/data_drift_pipeline/data/madrid_merge_2024.csv
   new_data:
     _type: local_path
-    path: /home/ubuntu/work/projects/data/madrid_merge_2005.csv
+    path: /home/ubuntu/work/projects/data_drift_pipeline/data/madrid_merge_2005.csv
