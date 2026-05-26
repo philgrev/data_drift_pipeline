@@ -236,6 +236,13 @@ def run_drift_analysis(
         results_path : str
             Path to a JSON file containing the full drift metrics report.
     """
+    if baseline.is_dir():
+        csv_files = list(baseline.glob("*.csv"))
+        baseline = csv_files[0]
+    if new_data.is_dir():
+        csv_files = list(new_data.glob("*.csv"))
+        new_data = csv_files[0]
+
     baseline_df = pd.read_csv(baseline)
     new_df = pd.read_csv(new_data)
 
